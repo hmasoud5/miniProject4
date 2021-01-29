@@ -6,30 +6,35 @@ class Main {
     Scanner scan = new Scanner(System.in);
     
     System.out.println(" Enter in your grade : ");
-
-
-
-
-
-  }
-   //method calculates credits 
-  static int credits (int passed , int totalGrade)
-  {
-    if ( passed )
+    int grade = scan.next();
+    
+    if (passClass(grade))
     {
-     totalGrade = totalGrade + 3; 
-     //if passed class then three credits will be added
+     System.out.println(" Three credits will be added! ");
+    }else{
+      System.out.println(" Must retake class. ")
     }
-    return totalGrade; 
+
+
   }
-   //method calculates passing class
+
+  // method calculates credits
+  static int credits(int passed, int totalGrade) {
+    if (passed) {
+      totalGrade = totalGrade + 3;
+      // if passed class then three credits will be added
+    }
+    return totalGrade;
+  }
+
+  // method calculates passing class
   static boolean passClass(int grade) {
     if (grade > 70) {
       return true;
-      //return true if your grade is greater than 70 ; meaning you passed the class.
+      // return true if your grade is greater than 70 ; meaning you passed the class.
     } else {
       return false;
-      //return false if your grade is less than 70 ; meaning you passed the class. 
+      // return false if your grade is less than 70 ; meaning you passed the class.
     }
   }
 }
