@@ -11,15 +11,16 @@ class Main {
     if (passClass(grade))
     {
      System.out.println(" Three credits will be added! ");
+     (credits(totalGrade)); 
     }else{
-      System.out.println(" Must retake class. ")
+      System.out.println(" Must retake class. ");
     }
 
 
   }
 
   // method calculates credits
-  static int credits(int passed, int totalGrade) {
+  static int credits(int totalGrade) {
     if (passed) {
       totalGrade = totalGrade + 3;
       // if passed class then three credits will be added
