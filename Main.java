@@ -17,7 +17,8 @@ class Main {
       System.out.println(" Your total credits now : " + grade);
     } else {
       System.out.println(" Must retake class. ");
-      System.out.println(" Total credits now : " + 0 );
+      
+      System.out.println(" Total credits now : ");
     }
 
   }
@@ -25,7 +26,7 @@ class Main {
   // method calculates credits
   static int credits(int totalGrade) {
 
-   totalGrade = totalGrade + 3;
+    totalGrade = totalGrade + 3;
     // if passed class then three credits will be added
 
     return totalGrade;
