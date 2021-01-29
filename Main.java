@@ -6,7 +6,7 @@ class Main {
     Scanner scan = new Scanner(System.in);
     // recieving user input from the user
 
-    System.out.println(" Enter in your grade : ");
+    System.out.println(" Enter in your grade: ");
     // enter in your grade in order to find out if you recieve credits
     int grade = scan.nextInt();
 
