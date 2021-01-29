@@ -8,10 +8,11 @@ class Main {
     System.out.println(" Enter in your grade : ");
     int grade = scan.next();
     
+    int grade = totalGrade; 
     if (passClass(grade))
     {
      System.out.println(" Three credits will be added! ");
-     (credits(totalGrade)); 
+     (credits(totalGrade))
     }else{
       System.out.println(" Must retake class. ");
     }
