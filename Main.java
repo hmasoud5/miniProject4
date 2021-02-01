@@ -17,7 +17,7 @@ class Main {
       System.out.println(" Your total credits now : " + grade);
     } else {
       System.out.println(" Must retake class. ");
-      
+
       System.out.println(" Total credits now : ");
     }
 
