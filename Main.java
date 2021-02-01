@@ -10,26 +10,26 @@ class Main {
     // enter in your grade in order to find out if you recieve credits
     int grade = scan.nextInt();
 
-    int totalGrade = 0;
+    int totalCredits = 0;
     if (passClass(grade)) {
       System.out.println(" Three credits will be added! ");
-      grade = credits(totalGrade);
-      System.out.println(" Your total credits now : " + grade);
+      totalCredits = credits(totalCredits);
+      System.out.println(" Your total credits now : " + totalCredits);
     } else {
       System.out.println(" Must retake class. ");
 
-      System.out.println(" Total credits now : ");
+      System.out.println(" Total credits now : " + totalCredits);
     }
 
   }
 
   // method calculates credits
-  static int credits(int totalGrade) {
+  static int credits(int totalCredits) {
 
-    totalGrade = totalGrade + 3;
+    totalCredits = totalCredits + 3;
     // if passed class then three credits will be added
 
-    return totalGrade;
+    return totalCredits;
   }
 
   // method calculates passing class
